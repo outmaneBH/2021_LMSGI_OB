@@ -1,0 +1,29 @@
+div{
+	width:90%;
+	height:20%;
+	margin:10px;
+  
+	border:solid 3px black;
+    background-repeat:no-repeat;
+	background-size:50%;
+	padding:20px;
+}
+@font-face{
+font-family:Josefin_Sans,cursive;
+src:url(../font/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+#c1::first-line{
+font-family:Josefin_Sans,cursive;
+word-spacing:15px;
+}
+
+#c2::first-line{
+	
+letter-spacing: 15px;
+font-family:Brightons , cursive;	
+
+}
+#c2{font-family:Brightons,cursive;}
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap');
+#c3{font-family: 'Big Shoulders Stencil Display', cursive;}

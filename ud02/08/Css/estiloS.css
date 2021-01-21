@@ -1,0 +1,65 @@
+
+div{
+	width:300px;
+	height:300px;
+	margin:10px;
+    display:inline-block;
+	border:solid 3px black;
+    background-repeat:no-repeat;
+	background-size:50%;
+}
+#c1{
+	background-image:url('../Images/puntonegro.png');
+	background-position:center ;	
+	
+}
+
+#c2 {
+	background-image:url('../Images/puntonegro.png'),url('../Images/puntonegro.png');
+	background-position:25% 25%,75% 75% ;
+
+}
+
+#c3 {
+	background-image:url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png');
+	background-position:25% 25%,50% 50%,75% 75%;
+	
+}
+
+#c4 {
+	background-image:url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png');
+    background-position:10% 10%,90% 10%,10% 80%,90% 80%;	
+}
+#c5 {
+	background-image:url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png');
+	background-position:center,10% 10%,90% 10%,10% 80%,90% 80% ;	
+}
+
+#c6{
+	background-image:url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png'),url('../Images/puntonegro.png');
+	background-position: 10% 10%,10% 47%,90% 47%,90% 10%,10% 80%,90% 80%  ;	
+}
+#c7{
+	border-radius:50%;
+	background-color: royalblue;
+}
+#c8{
+	border-radius:50% 25%;
+	background-color: yellow;
+}
+#c9{
+	border-radius :70% 35%;
+	background-color: sandybrown;
+}
+#c10{
+	border-bottom-left-radius: 20%;
+	background-color: violet;
+}
+#c11{
+	border-bottom-right-radius: 20%;
+	background-color: turquoise;
+}
+#c12{
+	border-radius:10% 10%;
+	background-color: seagreen;
+}
