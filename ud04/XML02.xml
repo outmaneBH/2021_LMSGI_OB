@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<contientes>
-	<contiente>
-		<nombre>EUROPA</nombre>
+<!DOCTYPE mundo[ 
+<!ELEMENT  continte (#PCDATA)>
+<!ELEMENT  pais (#PCDATA)>
+<!ELEMENT  capital (#PCDATA)>
+<!ELEMENT  fila (contiente,pais,capital)>
+<!ELEMENT mundo (fila+)>
+]>
+<mundo>
+	<fila>
+		<contiente>EUROPA</contiente>
 		<pais>ALEMANIA</pais>
 		<capital>BERLÍN</capital>
-	</contiente>
-	<contiente>
-		<nombre>AMÉRICA</nombre>
+	</fila>
+	<fila>
+		<contiente>AMÉRICA</contiente>
 		<pais>ARGENTINA</pais>
 		<capital>BUENOS AIRES</capital>
-	</contiente>
-	<contiente>
-		<nombre>AMÉRICA</nombre>
+	</fila>
+	<fila>
+		<contiente>AMÉRICA</contiente>
 		<pais>BAHAMAS</pais>
 		<capital>NASSAU</capital>
-	</contiente>
-	<contiente>
-		<nombre>ASIA</nombre>
+	</fila>
+	<fila>
+		<contiente>ASIA</contiente>
 		<pais>AFGANISTÁN</pais>
 		<capital>KABUL</capital>
-	</contiente>
-	<contiente>
-		<nombre>ASIA</nombre>
+	</fila>
+	<fila>
+		<contiente>ASIA</contiente>
 		<pais>ARABIA SAUDITA </pais>
 		<capital>RIAD</capital>
-	</contiente>
-</contientes>
+	</fila>
+</mundo>
