@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en"
+      xml:base="http://www.example.org">
+    <title>Todas las Practicas De Css</title>
+    <id>http://192.168.2.107/</id>
+    <link href="http://192.168.2.107/" title="Index Of practicas" />
+    <updated>2021-01-20T20:38:48+01:00</updated>
+    <author>
+        <name>Outmane Bouhou</name>
+        <email>outmane.bou.1@educa.jcyl.es</email>
+    </author>
+    <logo>http://192.168.2.107/img/practicas/9.jpg</logo>
+    <entry>
+        <id>http://192.168.2.107/Practicas/09/index.html</id>
+        <title>Practica 9</title>
+        <updated>2021-01-20T20:38:48+01:00</updated>
+    </entry>
+     <logo>http://192.168.2.107/img/practicas/10.png</logo>
+    <entry>
+        <id>http://192.168.2.107/Practicas/10/index.html</id>
+        <title>Practica 10</title>
+        <updated>2021-01-20T20:38:48+01:00</updated>
+    </entry>
+    <logo>http://192.168.2.107/img/practicas/11.jpg</logo>
+    <entry>
+        <id>http://192.168.2.107/Practicas/11/index.html</id>
+        <title>Practica 11</title>
+        <updated>2021-01-20T20:38:48+01:00</updated>
+    </entry>
+    <logo>http://192.168.2.107/img/practicas/12.png</logo>
+    <entry>
+        <id>http://192.168.2.107/Practicas/12/index.html</id>
+        <title>Practica 12</title>
+        <updated>2021-01-20T20:38:48+01:00</updated>
+    </entry>
+    <logo>http://192.168.2.107/img/practicas/i13.png</logo>
+    <entry>
+        <id>http://192.168.2.107/Practicas/13/index.html</id>
+        <title>Practica 13</title>
+        <updated>2021-01-20T20:38:48+01:00</updated>
+    </entry>
+</feed>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+    <head>
+        <title>Feeds OB</title>
+        <dateCreated>Miercoles, 20 Jan 2021 20:59:00 +0100</dateCreated>
+        <ownerName>OUTMANE BOUHOU</ownerName>
+    </head>
+    <body>
+        <outline text="Practicas CSS- RSS" type="rss" xmlUrl="http://192.168.2.107/Rss.xml" />
+         <outline text="Practicas CSS- Atom" type="rss" xmlUrl="http://192.168.2.107/Atom.xml" />
+    </body>
+</opml>
+
+<!--OPML es un tipo de fichero que se usa,
+ entre otras cosas, para exportar,
+hacer copias de seguridad e incluso compartir la lista de blogs a los que estamos suscritos mediante un agregador RSS.
+Para distinguirlo gráficamente tiene propuesto su propio iconillo estándard molón,
+ similar al de los RSS y que en este caso parece hecho por o para Bullseye.-->
