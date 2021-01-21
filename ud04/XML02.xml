@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contientes>
+	<contiente>
+		<nombre>EUROPA</nombre>
+		<pais>ALEMANIA</pais>
+		<capital>BERLÍN</capital>
+	</contiente>
+	<contiente>
+		<nombre>AMÉRICA</nombre>
+		<pais>ARGENTINA</pais>
+		<capital>BUENOS AIRES</capital>
+	</contiente>
+	<contiente>
+		<nombre>AMÉRICA</nombre>
+		<pais>BAHAMAS</pais>
+		<capital>NASSAU</capital>
+	</contiente>
+	<contiente>
+		<nombre>ASIA</nombre>
+		<pais>AFGANISTÁN</pais>
+		<capital>KABUL</capital>
+	</contiente>
+	<contiente>
+		<nombre>ASIA</nombre>
+		<pais>ARABIA SAUDITA </pais>
+		<capital>RIAD</capital>
+	</contiente>
+</contientes>

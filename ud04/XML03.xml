@@ -1,0 +1,26 @@
+<hechoHistoricos>
+    <description>
+        <nombre>Se funda Youtube</nombre>
+        <fecha>
+            <dia>15</dia>
+            <mes>2</mes>
+            <año>2005</año>
+        </fecha>
+    </description>
+    <description>
+        <nombre>Se funda Google</nombre>
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <año>1998</año>
+        </fecha>
+    </description>
+     <description>
+        <nombre>Se funda Facebook</nombre>
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <año>2004</año>
+        </fecha>
+    </description>
+</hechoHistoricos>
