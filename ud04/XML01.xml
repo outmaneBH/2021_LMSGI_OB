@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mail[
+<!ELEMENT remitente (#PCDATA)>
+<!ELEMENT destiatario (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT mensaje (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipoMIME (#PCDATA)>
+<!ELEMENT fechaDeMensage (dia,mes,anyo)>
+<!ELEMENT ficheroAdjunto (nombre,tipoMIME)>
+<!ELEMENT mail (remitente,destiatario+,fechaDeMensage,asunto?,mensaje?,ficheroAdjunto*)>
+
+]> 
+<mail>
+    <remitente>outmane@gmail.com</remitente>
+    <destiatario>outmane2@gmail.com</destiatario>
+    <destiatario>amor@gmail.com</destiatario>
+    <fechaDeMensage>
+        <dia>26</dia>
+        <mes>01</mes>
+        <anyo>2021</anyo>
+    </fechaDeMensage>
+    <asunto>Test</asunto>
+    <mensaje/>
+    <ficheroAdjunto>
+        <nombre>informe.pdf</nombre>
+        <tipoMIME>application/pdf</tipoMIME>
+    </ficheroAdjunto>
+        <ficheroAdjunto>
+        <nombre>foto.jpg</nombre>
+        <tipoMIME>image/jpeg</tipoMIME>
+    </ficheroAdjunto>
+</mail>
