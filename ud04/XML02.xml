@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mundo SYSTEM '02.dtd'>
 
+<!DOCTYPE mundo[ 
+<!ELEMENT  continte (#PCDATA)>
+<!ELEMENT  pais (#PCDATA)>
+<!ELEMENT  capital (#PCDATA)>
+<!ELEMENT  fila (contiente,pais,capital)>
+<!ELEMENT mundo (fila+)>
+]>
 <mundo>
 	<fila>
 		<contiente>EUROPA</contiente>
@@ -28,7 +33,4 @@
 		<capital>RIAD</capital>
 	</fila>
 </mundo>
->>>>>>> 54a70d0 Practicas de Tema 04 XML/DTD/SCHEMA
-=======
-</mundo>
->>>>>>> origin/master
+

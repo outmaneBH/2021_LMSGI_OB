@@ -21,8 +21,8 @@
     codT IDREF #REQUIRED>
 <!ELEMENT hora (dia_sem)*>
 <!ATTLIST hora
-    entrada (08:30|09:20|10:10|11:25|12:15|13:05) #REQUIRED
-    salida (09:20|10:10|11:00|12:15|13:05|13:55) #REQUIRED >
+    entrada (08:30|09:20|10:10|11:00|12:15|13:05) #REQUIRED
+    salida (09:20|10:10|11:00|11:50|12:15|13:05|13:55) #REQUIRED >
 <!ELEMENT dia_sem (#PCDATA)>
 <!ATTLIST dia_sem
     dia (lunes|martes|miercoles|jueves|viernes) #REQUIRED
