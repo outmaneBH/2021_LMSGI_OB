@@ -1,0 +1,42 @@
+i{
+  display: inline-block;
+  position: relative;
+  left: 50px;
+}
+
+/* Da a todas las imágenes el mismo tamaño 50x50px */
+ img{
+  width: 45px;
+  height: 60px;
+}
+p{padding: 5px;}
+
+/* Dar lo estilos adecuados para poner un borde simple colapsado y centrar la tabla */
+ table{
+  border-collapse: separate;
+  border-spacing: 10px 30px;
+  margin: 0px auto;
+  width: 75%;
+}
+img{
+  margin: 30px;
+}
+ th,td{
+  border: 1px solid black;
+  width: 16%;
+
+}
+tbody tr:nth-child(2n+1){
+  background-color: cyan;
+  padding: 10px;
+ 
+  font-family:'Goldman';
+}
+tbody tr:nth-child(2n){
+  background-color: lightblue ;
+  font-family:'Goldman-Regular';
+}
+tbody td:hover, tbody th:hover{
+  background-color: #A64B00;
+}
+

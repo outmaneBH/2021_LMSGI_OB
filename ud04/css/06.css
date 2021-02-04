@@ -1,0 +1,10 @@
+nombre{
+    color: red;
+}
+ejemplo{
+    white-space: pre;
+}
+ejemplo::after { 
+    content: ' \A';
+        white-space: pre;}
+

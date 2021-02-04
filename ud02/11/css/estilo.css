@@ -1,0 +1,136 @@
+﻿
+/* 
+    Created on : 03-dic-2019, 19:10:50
+    Author     : Amor Rodríguez <amor at marodriguezn@educa.jcyl.es>
+   
+*/
+
+ body {
+     margin: 5px;
+padding: 5px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+h1{
+    background-color: #da7140 #04B404 #FFB973 #008000 #8B008B #E9967A;
+    background-color: orange;
+     color: red;
+     font-variant: small-caps;
+ }
+ .par1{
+    background-color:  lightblue ;
+    color:  #04B404 ;
+    padding: 3px;
+    margin: 3px 0;
+    font-weight: bold;
+ }
+ body{
+	background-image:url("../images/Le_petit_prince.png");
+	background-position:top right;
+	background-repeat:no-repeat;
+	margin-right:300px;
+}
+ 
+ .static{
+     padding: 5px;
+     border: #da7140 2px solid;
+ }
+ .relative{
+     position: relative;
+     left: 3%;
+     border:#8B008B 1px dashed ;
+     padding: 4px;
+ }
+ .fixed{
+     position: fixed;
+     bottom: 9px;
+     right: 0%;
+     border: #04B404  dashed 2px;
+     background-color:#FFB973 ;
+     width: 230px;
+     padding: 5px;
+ }
+ .relative1{
+     border: #008000 solid 2px;
+     width: 38%;
+     height: 100px;
+     position: relative;
+     padding: 3px;
+    
+ }
+ .absolute1{
+     position: absolute;
+     width: 50%;
+     right: 1%;
+     padding: 3px;
+     border: #67e967 solid 2px;
+ }
+ .sticky{
+     border:1px solid #04B404 ;
+     background-color: #008000;
+     text-align: center;
+     border-radius: 8px;
+     position: sticky;
+     top:0;
+ }
+ .relative2{
+    border: #008000 solid 2px;
+    width: 40%;
+    height: 200px;
+   position: relative;
+    padding: 3px;
+   
+ }
+ .relative2 p{
+     position: relative;
+ }
+ .img1 {
+     width: 40%; 
+ }
+ .img2{
+    width: 50%;
+}
+ .container
+ {
+     border: 2px solid  #8B008B;
+     position: relative;
+     width: 70%;;
+ }
+div[class="topleft"],div[class="center"],div[class="bottomleft"],div[class="topright"],div[class="bottomright"]
+ {
+    background-color: #da7140;
+    width: 15%;
+    border:2px solid red;
+    color: darkred;
+    text-align: center
+ }
+.topleft{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+}
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;}
+.topright {
+position: absolute;
+top: 8px;
+right: 16px;
+}
+.center {
+ 
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 15%;
+    ;}
+.bottomright {
+position: absolute;
+bottom: 8px;
+right: 16px;
+}
+.relative2 p{
+    position: absolute;
+    top: 30px;
+}

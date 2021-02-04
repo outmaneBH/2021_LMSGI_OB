@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/06.css"?>
+<!DOCTYPE lenguaje[
+<!ELEMENT lenguaje (codigo+)>
+<!ELEMENT codigo (nombre,ejemplo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ejemplo (#PCDATA)>
+
+]>
+
+<lenguaje>
+    <codigo>
+        <nombre>Java</nombre>
+        <ejemplo>
+            <![CDATA[ import javax.swing.*;
+public class SyGFraccion{
+     
+    void mostrarFraccionSimplificada(int numerador, int denominador)
+    {
+        int div=0;
+        if((numerador % denominador)==0)
+        { div=numerador/denominador;
+            JOptionPane.showMessageDialog(null,""+div);
+        }
+        else if((denominador % numerador)==0)
+        { div=denominador/numerador;
+            JOptionPane.showMessageDialog(null,"1/"+div);
+        }
+        else
+            JOptionPane.showMessageDialog(null,""+numerador+"/"+denominador);
+     
+    } ]]>
+        </ejemplo>
+    </codigo>
+    <codigo>
+        <nombre>PHP</nombre>
+        <ejemplo>
+            <![CDATA[ <body>
+            <?php
+                echo "Hi, I'm a PHP script!";
+            ?>
+            </body>... ]]>
+        </ejemplo>
+    </codigo>
+
+</lenguaje>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE grupoestudiantes[
+<!ELEMENT  grupoestudiantes (estudiante+)>
+<!ELEMENT estudiante (#PCDATA)>
+<!ATTLIST estudiante cod ID #REQUIRED
+                     idref IDREFS #IMPLIED >
+]>
+<grupoestudiantes>
+    <estudiante cod="E1" idref="E2 E3">
+     Outmane
+    </estudiante>
+    <estudiante cod="E4" idref="E2">
+     Apa
+    </estudiante>
+    <estudiante cod="E2" idref="E2">
+     Outmane Bouhou
+    </estudiante>
+    <estudiante cod="E3" idref="E3">
+     Outmane Bouhou 1
+    </estudiante>
+   
+</grupoestudiantes>

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header {
+    padding: 30px;
+    text-align: center;
+  }
+  ol,li {
+    list-style: none;
+  }
+  a{
+      text-decoration:none ;
+      color: black;}
+ 
+
+header h1{
+    font-size: 30px; padding: 25px;
+}
+nav li{
+display: inline-block;
+  }
+  nav a{
+      padding:20px ;
+  }
+  nav a:hover{
+      background-color: gray;
+      color: white;
+      padding: 20px;
+  }
+  nav:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+ section{
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+ }
+ main:after {
+    content: "";
+    display: table;
+    clear: both;}
+
+    article{
+    background-color: gray;
+    margin: 0px 10px 2px 0px;
+    border-radius: 5%;
+    
+    }
+    article .content{
+        position: relative;
+        padding-left: 125px;
+    }
+    article figure{
+        position: absolute; left: -38px; top: -10px;
+    }
+    article img{width: 120px;height: 120px;}
+    h3,h4{
+        color: white;
+    }
+    address{
+        text-align: center;
+        padding: 10px;
+        margin-left:50% ;
+    }
+    
+    footer,figcaption{
+        text-align: center;
+
+    }
+@font-face{
+    font-family: "fa-solid";
+    src: url(../font/webfonts/fa-solid-900.woff);
+}
+
+ header h2:before{
+    font-family: fa-solid;
+    content: " \f000";
+   
+}
+   

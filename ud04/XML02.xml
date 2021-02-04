@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mundo SYSTEM '02.dtd'>
+
+<mundo>
+	<fila>
+		<contiente>EUROPA</contiente>
+		<pais>ALEMANIA</pais>
+		<capital>BERLÍN</capital>
+	</fila>
+	<fila>
+		<contiente>AMÉRICA</contiente>
+		<pais>ARGENTINA</pais>
+		<capital>BUENOS AIRES</capital>
+	</fila>
+	<fila>
+		<contiente>AMÉRICA</contiente>
+		<pais>BAHAMAS</pais>
+		<capital>NASSAU</capital>
+	</fila>
+	<fila>
+		<contiente>ASIA</contiente>
+		<pais>AFGANISTÁN</pais>
+		<capital>KABUL</capital>
+	</fila>
+	<fila>
+		<contiente>ASIA</contiente>
+		<pais>ARABIA SAUDITA </pais>
+		<capital>RIAD</capital>
+	</fila>
+</mundo>
+>>>>>>> 54a70d0 Practicas de Tema 04 XML/DTD/SCHEMA
+=======
+</mundo>
+>>>>>>> origin/master

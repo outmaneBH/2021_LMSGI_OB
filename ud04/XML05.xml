@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE company SYSTEM '05.dtd'>
+
+<company>
+<employee>
+<Firstname>Outmane</Firstname>
+<Lastaname>Bouhou</Lastaname>
+<ContactNo>51245678</ContactNo>
+<Email>outmane.bouho@gmail.com</Email>
+<Adress>
+    <city>Benvente</city>
+    <State>Zamora</State>
+    <Zip>49600</Zip>
+</Adress>
+</employee>
+</company>

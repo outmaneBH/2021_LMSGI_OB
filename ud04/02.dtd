@@ -1,0 +1,6 @@
+
+<!ELEMENT  continte (#PCDATA)>
+<!ELEMENT  pais (#PCDATA)>
+<!ELEMENT  capital (#PCDATA)>
+<!ELEMENT  fila (contiente,pais,capital)>
+<!ELEMENT mundo (fila+)>
