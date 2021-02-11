@@ -11,10 +11,11 @@ and open the template in the editor.
     xsi:noNamespaceSchemaLocation='Modelo.xsd'>
     <curso>1</curso>
     <ciclo>DAW</ciclo>
-    <nombreciclo>desarollo de applicaciones web</nombreciclo>
+    <nombreciclo>Desarollo de applicaciones web</nombreciclo>
     <codigopostal>49600</codigopostal>
     <comentario>Este ciclo es de DAW  </comentario>
     <temperatura>20</temperatura>
     <codigoasignatura>EDD</codigoasignatura>
-    <nombreciclo>Dañ </nombreciclo>
+    <profesor codP="ARN" mudolo="LMSGI">Amor Rodriguez</profesor>
+  
 </Modelo>
