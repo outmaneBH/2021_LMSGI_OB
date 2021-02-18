@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE grupoestudiantes[
+<!--<!DOCTYPE grupoestudiantes[
 <!ELEMENT  grupoestudiantes (estudiante+)>
 <!ELEMENT estudiante (#PCDATA)>
 <!ATTLIST estudiante cod ID #REQUIRED
                      idref IDREFS #IMPLIED >
 ]>
+
+-->
+
 <grupoestudiantes>
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='07_1.xsd'>
     <estudiante cod="E1" idref="E2 E3">
-     Outmane
+        Outmane
     </estudiante>
     <estudiante cod="E4" idref="E2">
-     Apa
+        Apa
     </estudiante>
     <estudiante cod="E2" idref="E2">
-     Outmane Bouhou
+        Outmane Bouhou
     </estudiante>
     <estudiante cod="E3" idref="E3">
-     Outmane Bouhou 1
+        Outmane Bouhou 1
     </estudiante>
    
 </grupoestudiantes>
