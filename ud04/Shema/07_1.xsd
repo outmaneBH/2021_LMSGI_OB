@@ -14,8 +14,8 @@ Outmane Bouhou
                     <xs:complexType>
                         <xs:simpleContent>
                             <xs:extension base="xs:string">
-                                <xs:attribute name ="cod" type="xs:ID"/>
-                                <xs:attribute name ="idref" type="xs:IDREF"/>
+                                <xs:attribute name ="cod" type="xs:ID" use="required"/>
+                                <xs:attribute name ="idref" type="xs:IDREF" use="optional"/>
                             </xs:extension>
                         </xs:simpleContent>
                        
