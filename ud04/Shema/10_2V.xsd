@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <!--Declaracion tipos simples-->
+    <!--Declaracion tipos Complejos-->
+    <!--Modulo-->
+    <xs:complexType name="TipoMudolos">
+        <xs:sequence>
+            <xs:element name="modulo" type="TipoMudolos"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TipoMudolo">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="codM" type="xs:string"/>
+                <xs:simpleType>
+                    <xs:restriction base="xd:ID">
+                        <xs:pattern value="EDD|LMSGI|PROG|BBDD|FOL|SINF"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <!--Profesor-->
+    <xs:complexType name="TipoProfesores">
+        <xs:sequence>
+            <xs:element name="profesor" type="TipoProfesores"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TipoProfesor">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="codP" type="xs:string"/>
+                <xs:simpleType>
+                    <xs:restriction base="xs:ID">
+                        <xs:pattern value="MUP|ARN|ACF|HRO|MAM"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <!--Asignatura-->
+    <xs:complexType name="TipoImpartes">
+        <xs:sequence>
+            <xs:element name="asignatura" type="TipoImpartes"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TipoAsignatura">
+        <xs:attribute name="codM" type="xs:string" use="required"/>
+        <xs:attribute name="codProfesor" type="xs:string" use="required"/>
+    
+    </xs:complexType>
+    <!--Grupo-->
+    <xs:complexType name="TipoGrupo">
+        <xs:sequence>
+            <xs:element name="hora" type="tipoHora"/>
+        </xs:sequence>
+        <xs:attribute name="idgrupo" type="xs:string" />
+        <xs:attribute name="codT" type="xs:ID" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="tipoHora">
+        <xs:sequence>
+            <xs:element name="dia_sem" type="tipoDiaSem"/>
+        </xs:sequence>
+        <xs:attribute name="entrada" type="xs:string" use="required"/>
+        <xs:attribute name="salida" type="xs:string" use="required"/>
+    
+    </xs:complexType>
+    <!--Diasem-->
+    <xs:complexType name="tipoDiaSem">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="dia" type="xs:string" use="required"/>
+                <xs:attribute name="num" type="xs:string" default="1"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <!--Declaracion de elemento Complejos-->
+    <xs:element name="horario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="modulos" type="TipoMudolos"/>
+                <xs:element name="profesores" type="TipoProfesores"/>
+                <xs:element name="imparte" type="TipoImpartes"/>
+                <xs:element name="grupo" type="TipoGrupo" maxOccurs="4"/>
+            </xs:sequence>
+            <xs:attribute name="curso" type="xs:string"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
+
+
+

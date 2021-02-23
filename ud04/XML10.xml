@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE horario SYSTEM '10.dtd'>
+<!DOCTYPE horario SYSTEM 'Dtd/10.dtd'  >
 
-<horario curso="2020/2021">
+<horario curso="2020/2021"
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='Shema/10_2V.xsd'>
     <modulos>
         <modulo codM="EDD">Entorno de Desarrollo</modulo>
         <modulo codM="LMSGI">Lenguaje y Marcas Sist Gest I</modulo>

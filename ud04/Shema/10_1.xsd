@@ -15,11 +15,15 @@ and open the template in the editor.
                 <xs:element name="modulos">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="modulo">
+                            <xs:element name="modulo" maxOccurs="unbounded" type="xs:string">
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">
-                                            <xs:attribute name="codM"/>
+                                            <xs:attribute name="codM" type="xs:ID" use="required">
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="EDD|LMSGI|PROG|BBDD|FOL|SINF"/>
+                                                </xs:restriction>
+                                            </xs:attribute>
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
@@ -31,11 +35,15 @@ and open the template in the editor.
                 <xs:element name="profesores">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="profesor">
+                            <xs:element name="profesor" maxOccurs="unbounded" type="xs:string">
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">
-                                            <xs:attribute name="codP"/>
+                                            <xs:attribute name="codP">
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="MUP|ARN|ACF|HRO|MAM"/>
+                                                </xs:restriction>
+                                            </xs:attribute>
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
@@ -47,16 +55,63 @@ and open the template in the editor.
                 <xs:element name="imparte">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="asignatura">
+                            <xs:element name="asignatura" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="codM"/>
+                                            <xs:attribute name="codProfesor" maxoccurs="3"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
                 <!--grupo-->
                 <xs:element name="grupo">
                     <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name ="idgrupo"  use="required"/>
+                                <xs:attribute name ="codT"  use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
                         <xs:sequence>
-                            <xs:element name="hora">
+                            <xs:element name="hora" maxOccurs="unbounded"> 
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dia_sem" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name ="dia" use="required">
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="lunes|martes|miercoles|jueves|viernes"/>
+                                                            </xs:restriction> 
+                                                        </xs:attribute>
+                                                        <xs:attribute name ="num" use="required">
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="[0-9]{5}"/>
+                                                            </xs:restriction>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name ="entrada"  use="required">
+                                                
+                                            </xs:attribute>
+                                            <xs:attribute name ="salida"  use="optional"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>   
+                            </xs:element>
                         </xs:sequence>
+                       
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
@@ -64,14 +119,3 @@ and open the template in the editor.
     </xs:element>
 
 </xs:schema>
-<!--
-<xs:simpleContent>
-    <xs:extension base="xs:string">
-        <xs:attribute name="curso"/>
-        <xs:simpleType>
-            <xs:restriction base="xs:string">
-                <xs:pattern value="[0-9]{4}[/][0-9]{4}"/>
-            </xs:restriction>
-        </xs:simpleType>
-    </xs:extension>
-</xs:simpleContent>-->
