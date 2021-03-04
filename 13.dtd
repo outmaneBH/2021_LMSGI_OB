@@ -1,0 +1,13 @@
+<!ELEMENT deportes (deporte+)>
+<!ATTLIST deportes  xmlns:xsi   CDATA #IMPLIED
+                 xsi:noNamespaceSchemaLocation  CDATA #IMPLIED>
+<!ELEMENT deporte (deportistas+,árbitro,entrenador,grupo)>
+<!ATTLIST deporte nombre CDATA #REQUIRED>
+<!ELEMENT deportistas (nombre,numero)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT árbitro (#PCDATA)>
+<!ATTLIST árbitro codAr CDATA #REQUIRED>
+<!ELEMENT entrenador (#PCDATA)>
+<!ATTLIST entrenador codEn CDATA #REQUIRED>
+<!ELEMENT grupo (#PCDATA)>

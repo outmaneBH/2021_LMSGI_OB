@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE deportes SYSTEM '13.dtd'>
+
+<deportes  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='13.xsd'
+>
+    <deporte nombre="Taekwondo ">
+        <deportistas>
+            <nombre>Outmane Bouhou</nombre>
+            <numero>MAR16070</numero>
+        </deportistas>
+        <árbitro codAr="2000" >Mauro Sarmiento</árbitro>
+        <entrenador codEn="3656">Steven López</entrenador>
+        <grupo>Marruecos</grupo>
+    </deporte>
+    <deporte nombre="basketball " >
+        <deportistas>
+            <nombre>Michael Jordan</nombre>
+            <numero>ESP15070</numero>
+        </deportistas>
+        <árbitro codAr="1000" > Magic Johnson</árbitro>
+        <entrenador codEn="3400">Larry Bird</entrenador>
+        <grupo> Chicago Bulls</grupo>
+    </deporte>
+</deportes>
